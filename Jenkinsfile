@@ -4,7 +4,7 @@ pipeline {
          stage("building app") {
             steps {
                 script {
-                   sh 'ansible all -m ping -i ansible/inventory'
+                   sh 'ansible-playbook ansible/build.yml  -i ansible/inventory/host.yml -vvv'
                 }
             }
         }
