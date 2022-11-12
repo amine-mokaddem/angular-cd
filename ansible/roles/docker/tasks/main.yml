@@ -3,7 +3,7 @@
   docker_image:
     name: aminemokaddem/devops
     build:
-      path: /home/amine/Desktop/angular-cd
+      path: /var/lib/jenkins/workspace/angular-cd
       pull: no
     source: build
     state: present
